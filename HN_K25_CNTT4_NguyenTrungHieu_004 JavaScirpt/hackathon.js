@@ -109,7 +109,7 @@ function updatePulish() {
         return;
     }
     let newPulish = prompt(`Nhập nhà phát hành mới`,found.publisher);
-    game.publisher = newPulish;
+    found.publisher = newPulish;
 }
 let choice;
 do {
@@ -151,4 +151,5 @@ do {
             console.log(`Lựa chọn không hợp lệ!Vui lòng nhập lại`);
             break;
     }
+
 }while(choice!==9);
