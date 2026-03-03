@@ -63,26 +63,7 @@ function updateInfomation() {
     let newPulish = prompt(`Nhập nhà phát hành mới`,found.publisher);
     let newAmount = prompt(`Nhập số lượng mới`,found.amount);
     let gamePrice = prompt(`Nhập giá của game`);
-    if(isNaN(gamePrice)|| gamePrice < 0){
-        alert("Giá game phải là số nguyên dương");
-        return;
-    }
-
-    let gameType = prompt(`Nhập thể loại game`);
-    if(!gameType){
-        alert("Thể loại game không hợp lệ");
-        return;
-    }
-    let publisher = prompt(`Nhập tên nhà phát hành`);
-    if(!publisher){
-        alert("Nhà phát hành không hợp lệ")
-        return;
-    }
-    let amount = +prompt(`Nhập số lượng của game`);
-    if(isNaN(amount) || amount < 0){
-        alert("Giá game phải là số nguyên dương");
-        return;
-    }
+    
     found.gamePrice = newPrice;
     found.gameType = newType;
     found.publisher = newPulish;
@@ -153,3 +134,4 @@ do {
     }
 
 }while(choice!==9);
+
